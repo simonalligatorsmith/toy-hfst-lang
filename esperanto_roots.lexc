@@ -1,0 +1,42 @@
+
+Multichar_Symbols
++R !Root
+
+!Parts of speech (POS)
++V  !Verb
+    +Past   !Past
+    +Pres   !Present
+    +Fut    !Future
+    +Inf    !Infinitive
+    +Imp !Imperative
+
++N !Noun
+    +Sing ! Singular
+    +Plu !Plural
+        +Nom !Nominative
+        +Acc !Accusative
+
+
+
+! Lexicon containing lexical stems:
+LEXICON Root
+ mangx R ;!'eat';
+ lern R ;!'learn;
+ romp R ;!'break';
+ vol R ;!'want';
+ sxat R ;!'like';
+ demand R ;!'ask';
+ konstru R ;!'make';
+ don R ;!'give';
+ elekt R ;!'choose';
+ vid R ;!'see';
+
+
+! Lexicon containing POS tag only:
+LEXICON R
++R: R-pos;
+
+! Lexicon containing inflectional suffixes and corresponding tags:
+LEXICON R-pos
++V: V-suff;
++N:o Number;
